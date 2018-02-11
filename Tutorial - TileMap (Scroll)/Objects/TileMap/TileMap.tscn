@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Objects/TileMap/TileMap.gd" type="Script" id=1]
+[ext_resource path="res://Objects/Map/Map.tscn" type="PackedScene" id=2]
+
+[node name="TileMap" type="Node2D" index="0"]
+
+script = ExtResource( 1 )
+mapSize = null
+tileSize = null
+
+[node name="Map" parent="." index="0" instance=ExtResource( 2 )]
+
+[node name="Tiles" type="Node2D" parent="." index="1"]
+
+

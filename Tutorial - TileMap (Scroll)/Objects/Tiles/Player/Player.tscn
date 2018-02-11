@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Objects/Tiles/Player/Player.gd" type="Script" id=1]
+[ext_resource path="res://tilecrusader-art/characters-32x32.png" type="Texture" id=2]
+
+[node name="Player" type="Node2D" index="0"]
+
+script = ExtResource( 1 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+type = "Player"
+cellPos = Vector2( 0, 0 )
+spriteMap = ExtResource( 2 )
+spriteMapSize = Vector2( 10, 1 )
+frame = 0
+
+

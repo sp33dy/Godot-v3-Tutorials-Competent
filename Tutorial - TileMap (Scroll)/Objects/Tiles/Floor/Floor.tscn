@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Objects/Tiles/Floor/Floor.gd" type="Script" id=1]
+[ext_resource path="res://tilecrusader-art/floor-tiles-20x20.png" type="Texture" id=2]
+
+[node name="Floor" type="Node2D"]
+
+script = ExtResource( 1 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+type = "Floor"
+cellPos = Vector2( 0, 0 )
+spriteMap = ExtResource( 2 )
+spriteMapSize = Vector2( 20, 13 )
+frame = null
+
+
