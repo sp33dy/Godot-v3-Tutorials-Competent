@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Particles/Particles.gd" type="Script" id=1]
+
+[node name="Particles" type="Node2D"]
+
+script = ExtResource( 1 )
+area = null
+count = 20
+
+
