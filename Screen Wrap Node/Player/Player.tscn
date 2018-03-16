@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://ScreenWrap/ScreenWrap.tscn" type="PackedScene" id=1]
+
+[node name="Player" type="Sprite"]
+
+[node name="ScreenWrap" parent="." index="0" instance=ExtResource( 1 )]
+
+
