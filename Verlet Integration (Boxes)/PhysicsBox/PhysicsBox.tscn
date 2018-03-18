@@ -1,0 +1,50 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://PhysicsBox/PhysicsBox.gd" type="Script" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 50, 50 )
+
+[node name="PhysicsBox" type="RigidBody2D"]
+
+position = Vector2( 100, 100 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+mode = 0
+mass = 0.0153061
+friction = 0.2
+bounce = 0.2
+gravity_scale = 1.0
+custom_integrator = false
+continuous_cd = 0
+contacts_reported = 0
+contact_monitor = false
+sleeping = false
+can_sleep = true
+linear_velocity = Vector2( 0, 0 )
+linear_damp = 0.2
+angular_velocity = 0.0
+angular_damp = 0.2
+script = ExtResource( 1 )
+_sections_unfolded = [ "Angular", "Linear", "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="0"]
+
+shape = SubResource( 1 )
+_sections_unfolded = [ "Z Index" ]
+
+[node name="Line2D" type="Line2D" parent="." index="1"]
+
+position = Vector2( -50, -50 )
+points = PoolVector2Array( 0, 0, 100, 0, 100, 100, 0, 100, 0, 0 )
+width = 2.0
+default_color = Color( 1, 0, 0, 1 )
+texture_mode = 1
+sharp_limit = 2.0
+round_precision = 8
+_sections_unfolded = [ "Transform" ]
+
+
