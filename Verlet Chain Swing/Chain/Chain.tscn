@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Chain/Chain.gd" type="Script" id=1]
+[ext_resource path="res://Chain/Loop/ChainLoop.tscn" type="PackedScene" id=2]
+[ext_resource path="res://images/Anchor.png" type="Texture" id=3]
+
+[node name="Chain" type="Node2D"]
+
+script = ExtResource( 1 )
+linkCount = 10
+
+[node name="AnchorLoop" parent="." index="0" instance=ExtResource( 2 )]
+
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Offset", "Visibility" ]
+anchor = true
+
+

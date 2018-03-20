@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://images/Loop.png" type="Texture" id=1]
+[ext_resource path="res://Chain/Loop/ChainLoop.gd" type="Script" id=2]
+
+[node name="ChainLoop" type="Sprite"]
+
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+_sections_unfolded = [ "Offset" ]
+anchor = false
+
+[node name="Control" type="Control" parent="." index="0"]
+
+modulate = Color( 0.136158, 0.106979, 0.480469, 1 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -12.0
+margin_top = -12.0
+margin_right = 12.0
+margin_bottom = 12.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 0
+mouse_default_cursor_shape = 3
+size_flags_horizontal = 1
+size_flags_vertical = 1
+_sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Mouse", "Rect", "Visibility" ]
+
+[connection signal="mouse_entered" from="Control" to="." method="_on_Control_mouse_entered"]
+
+[connection signal="mouse_exited" from="Control" to="." method="_on_Control_mouse_exited"]
+
+
