@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Ball/Ball.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Prototype.tscn" type="PackedScene" id=2]
+[ext_resource path="res://LongPieceRope/Rope.tscn" type="PackedScene" id=3]
+[ext_resource path="res://ShortPieceRope/Rope.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Chain/Chain.tscn" type="PackedScene" id=5]
+
+[node name="Game" type="Node" index="0"]
+
+[node name="Ball" parent="." index="0" instance=ExtResource( 1 )]
+
+position = Vector2( 568.745, 54.5481 )
+
+[node name="Prototype" parent="." index="1" instance=ExtResource( 2 )]
+
+position = Vector2( 217.124, 90.1898 )
+
+[node name="LongPieceRope" parent="." index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 419.216, 41.7546 )
+pieces = 20
+
+[node name="ShortPieceRope" parent="." index="3" instance=ExtResource( 4 )]
+
+position = Vector2( 694.796, 46.7651 )
+pieces = 45
+
+[node name="Chain" parent="." index="4" instance=ExtResource( 5 )]
+
+visible = false
+position = Vector2( 200, 12 )
+_sections_unfolded = [ "Transform" ]
+
+
