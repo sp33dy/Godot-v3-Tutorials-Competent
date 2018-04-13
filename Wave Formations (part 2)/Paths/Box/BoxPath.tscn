@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Paths/Box/BoxPath.gd" type="Script" id=1]
+
+[node name="Box Path" type="Node"]
+
+script = ExtResource( 1 )
+nodePathFactory = "../PathFactory"
+followerCount = 10
+followerGap = 32
+closed = true
+drawPathLine = false
+pathColour = Color( 1, 1, 0, 0.941176 )
+visible = false
+
+
